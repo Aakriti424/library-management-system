@@ -21,5 +21,7 @@ from base.views import *
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('register/', RegisterApiView.as_view(), name='Register'),
-    path('login/', login, name='Login')
+    path('login/', login, name='Login'),
+    path('book/', BookApiView.as_view(), name='Book'),
+    path('bookid/<int:pk>/', BookIdApi.as_view(), name='Bookid')
 ]

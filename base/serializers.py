@@ -21,3 +21,11 @@ class UserSerializer(serializers.ModelSerializer):
             contact=validated_data['contact']
         )
         return user
+    
+
+#Books Serializer
+
+class BookSerializer(serializers.ModelSerializer):
+    class Meta:
+        model=Book
+        fields='__all__'
