@@ -23,5 +23,7 @@ urlpatterns = [
     path('register/', RegisterApiView.as_view(), name='Register'),
     path('login/', login, name='Login'),
     path('book/', BookApiView.as_view(), name='Book'),
-    path('bookid/<int:pk>/', BookIdApi.as_view(), name='Bookid')
+    path('bookid/<int:pk>/', BookIdApi.as_view(), name='Bookid'),
+    path('borrowingrecord/', BorrowingRecordApiView.as_view(),name='BorrowingRecord'),
+    path('borrowingrecordid/<int:pk>/', BorrowingRecordIdApiView.as_view(), name='BorrowingRecordId')
 ]
